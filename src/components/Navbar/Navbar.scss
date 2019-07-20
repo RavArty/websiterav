@@ -1,0 +1,41 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 2px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      color: #FFF;
+      text-decoration: none;
+    
+      &:hover {
+        color: #C0C0C0;
+        cursor: pointer;
+      }
+    }
+  }
+}

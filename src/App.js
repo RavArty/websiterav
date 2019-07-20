@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar'
 import TurtleSquad from './components/Projects/TurtleSquad/TurtleSquad'
 import Rollocoball from './components/Projects/Rollocoball/Rollocoball'
 import Colors from './components/Projects/Colors/Colors'
+import Resume from './components/Resume/Resume'
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/' component={Landing} />
         <Route path='/turtlesquad' component={TurtleSquad} />
         <Route path='/rollocoball' component={Rollocoball} />
+        <Route path='/resume' component={Resume} />
         <Route path='/colors' component={Colors} />
       </Switch>
       

@@ -8,33 +8,38 @@ class ProjectsPreview extends React.Component {
     this.state = {
       sections: [
         {
-          title: 'turtlesquad',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: 'turtle squad',
+          imageUrl: 'https://i.ibb.co/6PvYXwZ/turtlesquad.png',
           id: 1,
           linkUrl: 'turtlesquad'
         },
         {
-          title: 'rollocoball',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-          id: 2,
-          linkUrl: 'rollocoball'
-        },
-        {
           title: 'colors',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          imageUrl: 'https://i.ibb.co/sV3vsJg/Screen-Shot-2019-07-18-at-11-02-42-PM.png',
           id: 3,
           linkUrl: 'colors'
         },
+        {
+          title: 'rollocoball',
+          imageUrl: 'https://i.ibb.co/Dzf3qPh/rollocoball.png',
+          id: 2,
+          linkUrl: 'rollocoball'
+        },
+        
       ] 
     }
   }
   render(){
     return(
-      <div className='directory-menu'>
-      {this.state.sections.map(({ id, ...otherSectionProps }) => (
-        <ProjectsItem key={id} {...otherSectionProps} />
-      ))}
-    </div>
+      <div id={'Projects'}>
+        <h1 style={{width: '100%', textAlign: 'center', padding: '50px 35px'}}>PROJECTS</h1>
+        <div className='directory-menu' >
+          {this.state.sections.map(({ id, ...otherSectionProps }) => (
+            <ProjectsItem key={id} {...otherSectionProps} />
+          ))}
+        </div>
+      </div>
+      
     )
   }
 }
