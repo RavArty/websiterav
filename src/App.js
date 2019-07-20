@@ -1,5 +1,6 @@
 import React from 'react';
 import "./App.css";
+import ScrollToTop from './ScrollToTop.js';
 //import { Switch, Route } from 'react-router-dom';
 import Landing from './components/LandingPage/Landing'
 import Navbar from './components/Navbar/Navbar'
@@ -13,17 +14,21 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Switch>
-        <Route exact path='/' component={Landing} />
-        <Route path='/turtlesquad' component={TurtleSquad} />
-        <Route path='/rollocoball' component={Rollocoball} />
-        <Route path='/resume' component={Resume} />
-        <Route path='/colors' component={Colors} />
-      </Switch>
+        <ScrollToTop>
+          <Switch>
+          <Route exact path='/' component={Landing} />
+          <Route path='/turtlesquad' component={TurtleSquad} />
+          <Route path='/rollocoball' component={Rollocoball} />
+          <Route path='/resume' component={Resume} />
+          <Route path='/colors' component={Colors} />
+        </Switch>
+        
+      </ScrollToTop>
       
     </div>
   );
 }
+
 
 export default App;
 
