@@ -9,20 +9,18 @@ import './Rollocoball.scss'
 const Rollocoball = () =>{
 	return(
 		<div className='project-page'>
-			<h1>TurtleSquad</h1>
-			<iframe width="560" height="315" 
-				src="https://www.youtube.com/embed/3UbeWYjb57s" 
-				frameBorder="0" allow="accelerometer; autoplay; 
-				encrypted-media; gyroscope; 
-				picture-in-picture" allowFullScreen></iframe>
+			<h1>Rollocoball</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CjO5JsBL7BU" 
+			frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+			allowFullScreen></iframe>
 			<p className ='descr'>{tsDescr}</p>
 
 			<p className ='descr'>{tsDescr3}</p>
 
-				<a  href="https://goo.gl/mZ0ZaY" target="_blank">
+				<a  href="https://goo.gl/miFXUK" target="_blank">
 					<Android className = 'contact-logo'/>
 				</a>
-				<a  href="https://goo.gl/61M2VV" target="_blank">
+				<a  href="https://goo.gl/2mBMLy" target="_blank">
 					<Apple className = 'contact-logo'/>
 				</a>
 				

@@ -1,0 +1,22 @@
+.project-page {
+  width: 90%;
+  margin: 30px auto;
+  padding: 25px 35px;
+  text-align: center;
+  
+  .descr{
+    font-size: 1.3em;
+  }
+
+  .contact-logo {
+    height: 70px;
+    width: 70px;
+    padding: 25px 50px;
+
+    &:hover {
+      color: #cf8a05;
+      cursor: pointer;
+    }
+  }
+
+}
