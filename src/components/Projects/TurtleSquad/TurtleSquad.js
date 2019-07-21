@@ -15,10 +15,10 @@ const TurtleSquad = () =>{
 				picture-in-picture" allowFullScreen></iframe>
 			<p className ='descr'>{tsDescr}</p>
 
-				<a  href="https://goo.gl/mZ0ZaY" target="_blank">
+				<a  href="https://goo.gl/mZ0ZaY" rel="noopener noreferrer" target="_blank">
 					<Android className = 'contact-logo'/>
 				</a>
-				<a  href="https://goo.gl/61M2VV" target="_blank">
+				<a  href="https://goo.gl/61M2VV" rel="noopener noreferrer" target="_blank">
 					<Apple className = 'contact-logo'/>
 				</a>
 				

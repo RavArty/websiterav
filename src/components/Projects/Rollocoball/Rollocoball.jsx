@@ -2,7 +2,6 @@ import React from 'react';
 import { ReactComponent as Android } from '../../assets/android.svg';
 import { ReactComponent as Apple } from '../../assets/apple.svg';
 import {turtleSquadDescription as tsDescr,
-				turtleSquadDescription2 as tsDescr2,
 				turtleSquadDescription3 as tsDescr3}  from './Descriptions'
 import './Rollocoball.scss'
 
@@ -17,10 +16,10 @@ const Rollocoball = () =>{
 
 			<p className ='descr'>{tsDescr3}</p>
 
-				<a  href="https://goo.gl/miFXUK" target="_blank">
+				<a  href="https://goo.gl/miFXUK" rel="noopener noreferrer" target="_blank">
 					<Android className = 'contact-logo'/>
 				</a>
-				<a  href="https://goo.gl/2mBMLy" target="_blank">
+				<a  href="https://goo.gl/2mBMLy" rel="noopener noreferrer" target="_blank">
 					<Apple className = 'contact-logo'/>
 				</a>
 				

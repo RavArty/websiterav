@@ -14,19 +14,13 @@ const Colors = () =>{
 
 	
 				
-				<div className='proj-pics'>
-					<div className='tc dib br3 pa3 ma2 mw5 shadow-5'>
-						<img alt='' src='https://i.ibb.co/pbPBsHX/main.png' />
-					</div>
-					<div className='tc dib br3 pa3 ma2 mw5 shadow-5'>
-						<img alt='' src='https://i.ibb.co/Sf8JkcB/chapter.png' />
-					</div>
-					<div className='tc dib br3 pa3 ma2 mw5 shadow-5'>
-						<img alt='' src='https://i.ibb.co/Sx88jtP/gameplay2.png' />
-					</div>
-					<div className='tc dib br3 pa3 ma2 mw5 shadow-5'>
-						<img alt='' src='https://i.ibb.co/Sx88jtP/gameplay2.png' />
-					</div>
+				<div className='proj-list'>
+					<p>Used technologies:</p>
+				<ul>
+				<li>Front End (React.js). Used Clarifai API to detect colors. Ability to sign in and see the whole history </li>
+				<li>Back End (Express.js), RESTful API </li>
+				<li>Database (PostgreSQL) to keep log in information, history (images, color codes)</li>
+			</ul>
 				</div>
 		</div>
 	);
