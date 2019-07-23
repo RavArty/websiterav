@@ -1,5 +1,5 @@
 import React from 'react';
-import "./App.css";
+
 import ScrollToTop from './ScrollToTop.js';
 //import { Switch, Route } from 'react-router-dom';
 import Landing from './components/LandingPage/Landing'
@@ -10,9 +10,6 @@ import Colors from './components/Projects/Colors/Colors'
 import Resume from './components/Resume/Resume'
 import { Switch, Route } from 'react-router-dom';
 
-import './assets/scss/blk-design-system-react.scss'
-import './assets/css/nucleo-icons.css'
-import './assets/demo/demo.css'
 
 class App extends React.Component {
 

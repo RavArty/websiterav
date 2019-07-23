@@ -1,16 +1,28 @@
 import React from 'react';
-
+import {
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 
 const Footer = () =>{
 	return(
-    <div className='footer'>
-      <footer class="bg-near-black pv4 ph3 ph5-m ph6-l white">
-        <small class="f6 db tc">© 2019 <b class="ttu">Ravshan Artykov</b>, All Rights Reserved</small>
-        <h4 className="mb-0 font-weight-light">
-                Let's get in touch on any of these platforms.
-              </h4>
-      </footer>
-    </div>
+    <footer className="footer">
+      <Container>
+        <Row>
+          <Col>
+            <h4 className="mb-0 font-weight-light">
+              © 2019 <b>Ravshan Artykov</b>, All Rights Reserved 
+            </h4>
+          </Col>
+          <Col>
+            <h4 className="mb-0 font-weight-light">
+              ravkart@gmail.com 
+            </h4>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
 	);
 }
 

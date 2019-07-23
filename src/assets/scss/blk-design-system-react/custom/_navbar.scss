@@ -26,6 +26,22 @@
         color: $opacity-8;
       }
     }
+
+    .linkscroll{
+      position: center;
+      color: white;
+      line-height: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      text-align: center;
+  
+      &:hover{
+        cursor: pointer;
+        color: rgba(255,255,255, .8);
+    }
+  }
+  
   }
 
   .navbar-wrapper {

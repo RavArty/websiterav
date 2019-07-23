@@ -9,27 +9,10 @@ const Contact = () =>{
 	return(
 
 		
-	<div
-	
-        className="section section-download"
+	<div className="section section-download"
         data-background-color="black"
-        id="download-section"
-      >{/*<div className='tc' id={'Contact'}>
-			<h1>CONTACTS</h1>
-			<div className='contact-header'>
-				<table style={{width: '100%'}}>
-					<tr>
-						<th><Email className = 'contact-logo'/></th>
-						<th><Phone className = 'contact-logo'/></th> 
-					</tr>
-					<tr>
-						<td><a href="mailto:ravkart@gmail.com" target="_blank">ravkart@gmail.com</a></td>
-						<td>+1 (310) 227-9274</td>
-					</tr>
-				</table>
-
-			</div>
-	</div>*/}
+        id="Contact"
+      >
         <img alt="..." className="path" src={require("../../assets/img/path1.png")} />
         <Container>
           <Row className="justify-content-md-center">
@@ -73,6 +56,7 @@ const Contact = () =>{
                 color="linkedin"
 								id="linkedin"
 								href='https://www.linkedin.com/in/ravart/'
+								target="_blank"
                 size="lg"
               >
                 <i className="fab fa-linkedin" />
@@ -81,27 +65,25 @@ const Contact = () =>{
               <Button
                 className="btn-icon btn-round"
                 color="facebook"
-                id="facebook"
+								id="facebook"
+								href='https://www.facebook.com/Ravshan.Artykov'
+								target="_blank"
                 size="lg"
               >
                 <i className="fab fa-facebook-square" />
               </Button>
-              <UncontrolledTooltip delay={0} target="facebook">
-                Share!
-              </UncontrolledTooltip>
+             
               <Button
                 className="btn-icon btn-round"
                 color="github"
-                href="https://github.com/creativetimofficial"
-                id="tooltip877922017"
+                href='https://github.com/RavArty'
+								target="_blank"
                 size="lg"
-                target="_blank"
+                
               >
                 <i className="fab fa-github" />
               </Button>
-              <UncontrolledTooltip delay={0} target="tooltip877922017">
-                Star on Github
-              </UncontrolledTooltip>
+              
             </Col>
           </Row>
         </Container>

@@ -3,7 +3,7 @@ import { Link as LinkScroll, animateScroll } from "react-scroll";
 import { Link } from 'react-router-dom'
 import { withRouter} from 'react-router-dom'
 import logo from './logo.png'
-//import './Navbar.scss'
+import './Navbar.scss'
 
 import {
   Button,
@@ -38,6 +38,12 @@ class NavbarComponent extends Component {
       smooth: 'easeInOutQuart'
     })
   }
+
+  scrollToContact = () => {
+    document
+      .getElementById("Contact")
+      .scrollIntoView({ behavior: "smooth" });
+  };
 
   componentDidMount() {
     window.addEventListener("scroll", this.changeColor);
@@ -88,13 +94,25 @@ class NavbarComponent extends Component {
 
     if (this.props.history.location.pathname !== '/'){
       return(
-        <div className='header'>
-          <Link className='logo-container' to='/'>
-            <div className="pa3" style={{ height: 100, width: 100 }}>
-	          <img style={{paddingTop: '5px'}} alt='logo' src={logo}/>
-          </div>
-          </Link>
-        </div>
+        <Navbar
+        className={"fixed-top " + this.state.color}
+        color-on-scroll="100"
+        expand="lg"
+      >
+        <Container>
+          <div className="navbar-translate">
+          <NavbarBrand
+              data-placement="bottom"
+              to='/'
+              tag={Link}
+            >
+              <span>{`<RavArty>`}</span>
+      
+            </NavbarBrand>
+            </div>
+            </Container>
+            </Navbar>
+        
       );
     }else {
       return (
@@ -105,11 +123,9 @@ class NavbarComponent extends Component {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
+          <NavbarBrand
               data-placement="bottom"
-              to="/"
-              rel="noopener noreferrer"
-           
+              onClick={this.scrollToTop}
               tag={Link}
             >
               <span>{`<RavArty>`}</span>
@@ -136,7 +152,7 @@ class NavbarComponent extends Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    BLK•React
+                    RA
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -152,7 +168,7 @@ class NavbarComponent extends Component {
             </div>
             <Nav navbar>
               <NavItem className="p-0">
-                <NavLink
+              <NavLink
                   data-placement="bottom"
                   href="https://www.linkedin.com/in/ravart/"
                   rel="noopener noreferrer"
@@ -163,7 +179,7 @@ class NavbarComponent extends Component {
                 </NavLink>
               </NavItem>
               <NavItem className="p-0">
-                <NavLink
+              <NavLink
                   data-placement="bottom"
                   href="https://www.facebook.com/Ravshan.Artykov"
                   rel="noopener noreferrer"
@@ -174,7 +190,7 @@ class NavbarComponent extends Component {
                 </NavLink>
               </NavItem>
               <NavItem className="p-0">
-                <NavLink
+              <NavLink
                   data-placement="bottom"
                   href="https://github.com/RavArty"
                   rel="noopener noreferrer"
@@ -184,29 +200,43 @@ class NavbarComponent extends Component {
                   <p className="d-lg-none d-xl-none">GitHub</p>
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/">
-                  HOME
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/">
-                  PROJECT
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/">
-                  RESUME
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/">
-                  CONTACT
-                </NavLink>
-              </NavItem>
-        
-                
+              <div className='linkscroll'>
+              <a onClick={this.scrollToTop}>HOME</a>
+              </div>
               
+              <LinkScroll className='linkscroll'
+                activeClass="active"
+                to="Projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                PROJECTS
+              </LinkScroll>
+              
+              
+              <LinkScroll className='linkscroll'
+                activeClass="active"
+                to="Contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                CONTACT
+              </LinkScroll>
+              
+                
+              <NavLink className='linkscroll'
+                href="https://github.com/RavArty/resume/blob/master/RavshanArtykovResume.pdf"
+                rel="noopener noreferrer" 
+                target="_blank"
+                
+              >
+                <p>RESUME</p>
+              </NavLink>
+                     
             </Nav>
           </Collapse>
         </Container>
