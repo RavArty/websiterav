@@ -5,7 +5,6 @@ import './Colors.scss'
 
 import {
   Button,
-  Container,
   Row,
   Col
 } from "reactstrap";

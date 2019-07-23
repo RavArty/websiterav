@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import { Link as LinkScroll, animateScroll } from "react-scroll";
 import { Link } from 'react-router-dom'
 import { withRouter} from 'react-router-dom'
-import logo from './logo.png'
+
 import './Navbar.scss'
 
 import {
-  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,

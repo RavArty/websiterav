@@ -93,7 +93,7 @@ class TurtleSquad extends React.Component {
                   </div>
                 </Col>
                 <Col lg="6" md="4">
-								<iframe width="560" height="315" 
+								<iframe title='iframe' width="560" height="315" 
 									src="https://www.youtube.com/embed/3UbeWYjb57s" 
 									frameBorder="0" allow="accelerometer; autoplay; 
 									encrypted-media; gyroscope; 

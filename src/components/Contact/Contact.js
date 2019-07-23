@@ -1,8 +1,5 @@
 import React from 'react';
-import { ReactComponent as Email } from './email.svg';
-import { ReactComponent as Phone } from './phone.svg';
-//import './Contact.scss'
-import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 
 const Contact = () =>{

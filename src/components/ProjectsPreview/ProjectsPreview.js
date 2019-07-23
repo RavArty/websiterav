@@ -1,9 +1,8 @@
 import React from 'react'
-import ProjectsItem from '../ProjectsItem/ProjectsItem'
-import { Link } from "react-router-dom";
+
 import { Container, Button, Row, Col } from "reactstrap";
 import { withRouter } from 'react-router-dom'
-//import './ProjectsPreview.styles.scss'
+
 
 
 class ProjectsPreview extends React.Component {
