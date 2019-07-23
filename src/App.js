@@ -3,17 +3,27 @@ import "./App.css";
 import ScrollToTop from './ScrollToTop.js';
 //import { Switch, Route } from 'react-router-dom';
 import Landing from './components/LandingPage/Landing'
-import Navbar from './components/Navbar/Navbar'
+import NavbarComponent from './components/Navbar/Navbar'
 import TurtleSquad from './components/Projects/TurtleSquad/TurtleSquad'
 import Rollocoball from './components/Projects/Rollocoball/Rollocoball'
 import Colors from './components/Projects/Colors/Colors'
 import Resume from './components/Resume/Resume'
 import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
+import './assets/scss/blk-design-system-react.scss'
+import './assets/css/nucleo-icons.css'
+import './assets/demo/demo.css'
+
+class App extends React.Component {
+
+  componentDidMount() {
+    document.body.classList.toggle("index-page");
+  }
+
+  render() {
+    return (
     <div>
-      <Navbar />
+      <NavbarComponent />
         <ScrollToTop>
           <Switch>
           <Route exact path='/' component={Landing} />
@@ -27,6 +37,8 @@ function App() {
       
     </div>
   );
+  }
+  
 }
 
 

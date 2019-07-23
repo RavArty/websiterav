@@ -1,48 +1,29 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import './Top.scss'
+import { Container } from "reactstrap";
+//import './Top.scss'
 
 
 
 const Top = () =>{
 
 	return(
-		<div style={{width: '100%', margin: 'auto'}}>
-        <Grid className="landing-grid">
-          <Cell col={12}>
-           {/*<img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-              alt="avatar"
-              className="avatar-img"
-              /> */} 
-             
-
-            <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
-
-            <hr/>
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
-
-          <h1>Game Developer</h1>
-          <hr/>
-          <p>Swift | C# | Unity Engine</p>
-
-        <div className="social-links">
-
-          {/* LinkedIn */}
-          <a href="https://www.linkedin.com/in/ravart/" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
-
-          {/* Github */}
-          <a href="https://github.com/RavArty" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
-
-        </div>
-            </div>
-          </Cell>
-        </Grid>
+		<div className="page-header header-filter">
+        <div className="squares square1" />
+        <div className="squares square2" />
+        <div className="squares square3" />
+        <div className="squares square4" />
+        <div className="squares square5" />
+        <div className="squares square6" />
+        <div className="squares square7" />
+        <Container>
+          <div className="content-center brand">
+            <h1 className="h1-seo">Ravshan Artykov</h1>
+            <h3 className="d-none d-sm-block">
+            I'm a software engineer specializing in building high-quality websites and applications.
+            </h3>
+          </div>
+        </Container>
       </div>
 	);
 }

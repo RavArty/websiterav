@@ -1,6 +1,8 @@
 import React from 'react'
 import ProjectsItem from '../ProjectsItem/ProjectsItem'
-import './ProjectsPreview.styles.scss'
+import { Link } from "react-router-dom";
+import { Container, Button, Row, Col } from "reactstrap";
+//import './ProjectsPreview.styles.scss'
 
 class ProjectsPreview extends React.Component {
   constructor(){
@@ -9,13 +11,13 @@ class ProjectsPreview extends React.Component {
       sections: [
         {
           title: 'turtle squad',
-          imageUrl: 'https://i.ibb.co/6PvYXwZ/turtlesquad.png',
+          imageUrl: 'https://i.ibb.co/p0HfyYr/turtles2.png',
           id: 1,
           linkUrl: 'turtlesquad'
         },
         {
           title: 'colors',
-          imageUrl: 'https://i.ibb.co/sV3vsJg/Screen-Shot-2019-07-18-at-11-02-42-PM.png',
+          imageUrl: 'https://i.ibb.co/McfyRfp/colors.png',
           id: 3,
           linkUrl: 'colors'
         },
@@ -31,15 +33,22 @@ class ProjectsPreview extends React.Component {
   }
   render(){
     return(
-      <div id={'Projects'}>
-        <h1 style={{width: '100%', textAlign: 'center', padding: '50px 35px'}}>PROJECTS</h1>
-        <div className='directory-menu' >
-          {this.state.sections.map(({ id, ...otherSectionProps }) => (
-            <ProjectsItem key={id} {...otherSectionProps} />
-          ))}
-        </div>
-      </div>
       
+      <div className="section section-examples" data-background-color="black">
+        <img alt="..." className="path" src={require("../../assets/img/path1.png")} />
+        <div className="space-50" />
+        <div className='text-center'>
+          <h2 className="title">PROJECTS</h2>
+        </div>
+        <Container className="text-center">
+          <Row>
+            {this.state.sections.map(({ id, ...otherSectionProps }) => (
+                        <ProjectsItem key={id} {...otherSectionProps} />
+                      ))}
+          </Row>
+        </Container>
+      </div>
+    
     )
   }
 }
