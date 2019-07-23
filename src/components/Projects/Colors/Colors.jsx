@@ -77,7 +77,7 @@ class Colors extends React.Component {
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
-                        href="https://goo.gl/miFXUK"
+                        href="https://colorappfront.herokuapp.com"
 												rel="noopener noreferrer" 
 												target="_blank"
                       >
