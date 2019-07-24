@@ -95,7 +95,7 @@ class Rollocoball extends React.Component {
                     </div>
                   </div>
                 </Col>
-                <Col lg="2" md="8">
+                <Col lg="6" md="4">
 								<iframe title='iframe' width="560" height="315" 
 								src="https://www.youtube.com/embed/CjO5JsBL7BU" 
 								frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
