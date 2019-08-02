@@ -9,11 +9,13 @@ import Rollocoball from './components/Projects/Rollocoball/Rollocoball'
 import Colors from './components/Projects/Colors/Colors'
 import Resume from './components/Resume/Resume'
 import { Switch, Route } from 'react-router-dom';
-
+import ReactGA from "react-ga";
 
 class App extends React.Component {
 
   componentDidMount() {
+    ReactGA.initialize("UA-55703507-5");
+    ReactGA.pageview(window.location.pathname + window.location.search)
     document.body.classList.toggle("index-page");
   }
 

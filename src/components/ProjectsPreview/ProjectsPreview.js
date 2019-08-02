@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Container, Button, Row, Col } from "reactstrap";
 import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -68,8 +69,10 @@ class ProjectsPreview extends React.Component {
                     <Button
                       className="btn-simple"
                       color="info"
-                      href="#pablo"
-                      onClick={() => history.push(`${match.url}turtlesquad`)}
+                    //  href="#pablo"
+                      to='turtlesquad'
+                      tag={Link}
+                     // onClick={() => history.push(`${match.url}turtlesquad`)}
                     >
                       <i className="tim-icons icon-bulb-63" /> Learn More
                     </Button>
@@ -94,8 +97,10 @@ class ProjectsPreview extends React.Component {
                     <Button
                       className="btn-simple"
                       color="info"
-                      href="#pablo"
-                      onClick={() => history.push(`${match.url}colors`)}
+                      to='colors'
+                      tag={Link}
+                     // href="#pablo"
+                     // onClick={() => history.push(`${match.url}colors`)}
                     >
                       <i className="tim-icons icon-bulb-63" /> Learn More
                     </Button>
@@ -137,8 +142,10 @@ class ProjectsPreview extends React.Component {
                     <Button
                       className="btn-simple"
                       color="info"
-                      href="#pablo"
-                      onClick={() => history.push(`${match.url}rollocoball`)}
+                      to='rollocoball'
+                      tag={Link}
+                    //  href="#pablo"
+                    //  onClick={() => history.push(`${match.url}rollocoball`)}
                     >
                       <i className="tim-icons icon-bulb-63" /> Learn More
                     </Button>
