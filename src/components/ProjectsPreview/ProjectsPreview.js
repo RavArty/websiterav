@@ -125,7 +125,7 @@ class ProjectsPreview extends React.Component {
                   <img
                     alt="..."
                     className="img-raised"
-                    src='https://i.ibb.co/Dzf3qPh/rollocoball.png'
+                    src='https://i.ibb.co/0Yxxw5L/rol2.jpg'
                   /> 
                   </Row>
                 </Col>

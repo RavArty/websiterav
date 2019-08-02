@@ -113,7 +113,7 @@ class Rollocoball extends React.Component {
                 <img
                   alt="..."
                   className="img-raised"
-                  src='https://i.ibb.co/nr4bGQM/rol3.png'
+                  src='https://i.ibb.co/80jyrkG/rol1.jpg'
                 />
             </Col>
             <Col sm="4">
@@ -121,7 +121,7 @@ class Rollocoball extends React.Component {
                 <img
                   alt="..."
                   className="img-raised"
-                  src='https://i.ibb.co/CJm0Nby/rol1.png'
+                  src='https://i.ibb.co/GvsxkqZ/rol4.jpg'
                 />
 
             </Col>
@@ -130,7 +130,7 @@ class Rollocoball extends React.Component {
                 <img
                   alt="..."
                   className="img-raised"
-                  src='https://i.ibb.co/FwjLq7g/rol2.png'
+                  src='https://i.ibb.co/jGvtCcT/rol3.jpg'
                 />
 
             </Col>

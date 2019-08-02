@@ -23,7 +23,7 @@ class ProjectsPreview extends React.Component {
         },
         {
           title: 'rollocoball',
-          imageUrl: 'https://i.ibb.co/Dzf3qPh/rollocoball.png',
+          imageUrl: 'https://i.ibb.co/0Yxxw5L/rol2.jpg',
           id: 2,
           linkUrl: 'rollocoball'
         },
