@@ -1,4 +1,3 @@
-const colorsDescription = `A web application that detects dominant colors in
-uploaded images`;
+const colorsDescription = `An easy web app that helps designers to isolate specific colors in their images.`;
 
 export default colorsDescription

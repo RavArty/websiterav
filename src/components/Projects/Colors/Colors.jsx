@@ -91,7 +91,7 @@ class Colors extends React.Component {
 								<img
                     alt="..."
                     className="img-fluid"
-                    src='https://i.ibb.co/McfyRfp/colors.png' />
+                    src='https://i.ibb.co/G9h7J4H/colorsv2.png' />
                   
                 </Col>
               </Row>
