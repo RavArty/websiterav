@@ -62,7 +62,7 @@ class ProjectsPreview extends React.Component {
                   <h1 className="profile-title text-left">Colors</h1>
                   <h5 className="text-on-back">01</h5>
                   <h1 className="profile-description text-left">
-                    A web app for detecting dominant colors on uploaded images.
+                  An easy web app that helps designers to isolate specific colors in their images.
                   </h1>
                   <div className="btn-wrapper pt-3">
                   
