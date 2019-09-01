@@ -121,7 +121,7 @@ class NavbarComponent extends Component {
           <NavbarBrand
               data-placement="bottom"
               onClick={this.scrollToTop}
-              tag={Link}
+            //  tag={Link}
             >
               <span>{`<RavArty>`}</span>
               
